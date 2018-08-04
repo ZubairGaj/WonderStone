@@ -12,67 +12,25 @@
         <br />
         <br />
         <div class="container-fluid">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <form>
-                    <div class="form-row row">
-                        <div class="col-md-4 mb-3">
-                        <label for="validationServer01">First name</label>
-                        <input type="text" class="form-control" id="validationServer01" placeholder="First name" value="" required>
-                        <div class="valid-feedback">
-                        </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                        <label for="validationServer02">Last name</label>
-                        <input type="text" class="form-control" id="validationServer02" placeholder="Last name" value="" required>
-                        <div class="valid-feedback">
-                        </div>
-                        </div>
-                        <div class="col-md-4 mb-3"></div>
-
-                    </div>
-                    <div class="form-row row">
-                        <div class="col-md-6 mb-3">
-                        <label for="validationServer03">City</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid city.
-                        </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                        <label for="validationServer04">State</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid state.
-                        </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                        <label for="validationServer05">Zip</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid zip.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
-                        <label class="form-check-label" for="invalidCheck3">
-                            Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                            You must agree before submitting.
-                        </div>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Submit form</button>
-                    </form>          
+          <div class="jumbotron">
+            <p>Contact Us</p>
+            <hr />
+            <div class="form-group">
+              <label for="inputFullName">Full Name</label>
+              <input type="text" class="form-control" id="inputFullName" aria-describedby="emailHelp" placeholder="Enter your full name">
             </div>
-            <div class="col-md-1"></div>
+            <div class="form-group">
+              <label for="inputEmail">Email address</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Customer Query</label>
+              <textarea class="form-control" id="inputTextarea" aria-describedby="emailHelp" placeholder="Enter your query"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
         </div>
-        <br />
-        <br />
-        <br />
         <br />
         <br />
         <div class="content-shadow">
