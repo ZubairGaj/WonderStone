@@ -1,2 +1,0 @@
-# WonderStone
-Project Development Company
