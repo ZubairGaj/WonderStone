@@ -13,10 +13,10 @@ router.get('/ebay', function(req, res, next) {
 });
 
 router.get('/ebay/auth',
-  passport.authenticate('ebay'));
+  passport.authenticate('oauth2'));
 
 router.get('/ebay/redirect',
-  passport.authenticate('ebay', { failureRedirect: '/login' }), function(req, res, next) {
+  passport.authenticate('oauth2', { failureRedirect: '/login' }), function(req, res, next) {
     res.redirect('/');
 });
 
