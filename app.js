@@ -1,12 +1,14 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var logger = require('morgan');
-var bodyParser = require('body-parser')
-
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const logger = require('morgan');
+const bodyParser = require('body-parser')
+const mongoose = require('mongoose');
 var indexRouter = require('./routes/index');
 
-var app = express();
+const app = express();
+
+mongoose.connect('mongodb://zubzg:zubair1998@ds225382.mlab.com:25382/ebaymanager', { useNewUrlParser: true });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

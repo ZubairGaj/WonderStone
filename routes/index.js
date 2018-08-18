@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 var config = require('../config/config.js');
+var schema = require('../model');
 const passport = require('passport');
 const nodemailer = require('nodemailer');
 
@@ -13,8 +14,22 @@ router.get('/ebay', function(req, res, next) {
   res.render('login', { title: 'WonderStone Group' });
 });
 
+router.get('/all', (req, res, next)=>{
+  schema.find({}, function (err, docs) {
+    res.json(docs)
+  })
+});
+
 router.post('/query', function(req, res, next) {
   console.log(req.body);
+
+  var queries = new schema(req.body);
+
+  queries.save(function (err, docs) {
+    if (err) return console.error(err);
+    console.log(docs);
+  });
+
   nodemailer.createTestAccount((err, account) => {
       // create reusable transporter object using the default SMTP transport
       let transporter = nodemailer.createTransport({
