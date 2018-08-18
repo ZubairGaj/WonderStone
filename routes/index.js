@@ -37,6 +37,7 @@ router.post('/query', function(req, res, next) {
           if (error) {
               return console.log(error);
           }
+          res.status(200);
           console.log('Message sent: %s', info.messageId);
           // Preview only available when sending through an Ethereal account
           console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
@@ -45,7 +46,6 @@ router.post('/query', function(req, res, next) {
           // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
       });
   });
-  res.status(200);
 });
 
 router.get('/ebay/auth',
