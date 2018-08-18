@@ -25,7 +25,7 @@ router.post('/query', function(req, res, next) {
 
       // setup email data with unicode symbols
       let mailOptions = {
-          from: `noreply@wonderstonegroup.com`, // sender address
+          from: `noreply@wonderstone.herokuapp.com`, // sender address
           to: 'thecreatorofthisempire@gmail.com', // list of receivers
           subject: 'New Query', // Subject line
           text: `${req.body.query}`, // plain text body
