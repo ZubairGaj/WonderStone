@@ -13,23 +13,25 @@
         <br />
         <div class="container-fluid">
           <div class="jumbotron">
-            <p action="info">Contact Us</p>
-            <hr />
-            <div class="form-group">
-              <label for="inputFullName">Full Name</label>
-              <input type="text" class="form-control" id="inputFullName" aria-describedby="emailHelp" placeholder="Enter your full name">
-            </div>
-            <div class="form-group">
-              <label for="inputEmail">Email address</label>
-              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Customer Query</label>
-              <textarea class="form-control" id="inputTextarea" aria-describedby="emailHelp" placeholder="Enter your query"></textarea>
-            </div>
-            <small id="submit-message"></small> <br /> <br />
-            <button type="submit" class="btn btn-primary" onclick="formSubmit()">Submit</button>
+            <form class="form" action="#" onsubmit="formSubmit()" method="get">
+              <p action="info">Contact Us</p>
+              <hr />
+              <div class="form-group">
+                <label for="inputFullName">Full Name</label>
+                <input type="text" class="form-control" id="inputFullName" placeholder="Enter your full name">
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Customer Query</label>
+                <textarea class="form-control" id="inputTextarea" placeholder="Enter your query"></textarea>
+              </div>
+              <small id="submit-message"></small> <br /> <br />
+              <input type="submit" class="btn btn-primary" />
+            </form>
           </div>
         </div>
         <br />
