@@ -4,11 +4,11 @@ const passport = require('passport');
 const keys = require('./keys');
 
 passport.use(new OAuth2Strategy({
-    authorizationURL: 'https://auth.ebay.com/oauth2/authorize',
-    tokenURL: 'https://api.ebay.com/identity/v1/oauth2/token',
+    authorizationURL: 'https://auth.sandbox.ebay.com/oauth2/authorize',
+    tokenURL: 'https://api.sandbox.ebay.com/identity/v1/oauth2/token',
     clientID: keys.ebay.clientID,
     clientSecret: keys.ebay.clientSecret,
-    ruName: '/ebay/redirect'
+    ruName: 'https://wonderstone.herokuapp.com/ebay/redirect'
   },
   function(accessToken, refreshToken, cb) {
     console.log(accessToken);
