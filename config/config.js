@@ -4,7 +4,7 @@ const passport = require('passport');
 const keys = require('./keys');
 
 passport.use(new OAuth2Strategy({
-    authorizationURL: 'https://signin.ebay.com/authorize',
+    authorizationURL: 'https://auth.ebay.com/oauth2/authorize',
     tokenURL: 'https://api.ebay.com/identity/v1/oauth2/token',
     clientID: keys.ebay.clientID,
     clientSecret: keys.ebay.clientSecret,
