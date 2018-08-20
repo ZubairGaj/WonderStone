@@ -20,6 +20,15 @@ router.get('/all', (req, res, next)=>{
   })
 });
 
+router.get('/ebay/auth',
+  passport.authenticate('ebay')
+);
+
+router.get('/ebay/redirect',
+  passport.authenticate('ebay', { failureRedirect: '/login' }), function(req, res, next) {
+    res.redirect('/');
+});
+
 router.post('/query', function(req, res, next) {
   console.log(req.body);
 
@@ -61,15 +70,6 @@ router.post('/query', function(req, res, next) {
           // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
       });
   });
-});
-
-router.get('/ebay/auth',
-  passport.authenticate('oauth2')
-);
-
-router.get('/ebay/redirect',
-  passport.authenticate('oauth2', { failureRedirect: '/login' }), function(req, res, next) {
-    res.redirect('/');
 });
 
 module.exports = router;
