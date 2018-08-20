@@ -25,7 +25,7 @@ router.get('/ebay/auth',
 );
 
 router.get('/ebay/redirect',
-  passport.authenticate('oauth2', { failureRedirect: '/login' }), function(req, res, next) {
+  passport.authenticate('oauth2', { failureRedirect: '/' }), function(req, res, next) {
     res.redirect('/');
 });
 
