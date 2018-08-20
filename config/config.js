@@ -17,12 +17,13 @@ const keys = require('./keys');
 // ));
 
 passport.use(new eBayStrategy({
-    clientID: `${keys.ebay.clientID}`,
-    clientSecret: `${keys.ebay.clientSecret}`,
-    ruName: 'ebay/redirect'
+    clientID: `ZubairGa-hoodedso-SBX-c5d8a3c47-8b93d42a`,
+    clientSecret: `SBX-5d8a3c47277e-866c-430e-9847-077d`,
+    ruName: '/ebay/redirect'
   },
   function(accessToken, refreshToken, cb) {
     // Do whatever you need with credentials. A request call to eBay api to fetch user perhaps?
+    console.log(accessToken, refreshToken);
     cb();
   }
 ));
