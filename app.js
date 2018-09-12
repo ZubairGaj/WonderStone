@@ -6,10 +6,17 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
 var indexRouter = require('./routes/index');
 var cors = require('cors')
+var request = require('request');
 
 const app = express();
 
 mongoose.connect('mongodb://zubzg:zubair1998@ds225382.mlab.com:25382/ebaymanager', { useNewUrlParser: true });
+
+setInterval(function(){
+  console.log('ran');
+  request('https://wonderstone.herokuapp.com/', function (error, response, body) {
+  });
+}, 300000)
 
 // view engine setup
 app.use(cors())

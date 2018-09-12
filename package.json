@@ -18,6 +18,7 @@
     "morgan": "~1.9.0",
     "nodemailer": "^4.6.8",
     "passport": "^0.4.0",
-    "passport-ebay": "^1.0.1-beta"
+    "passport-ebay": "^1.0.1-beta",
+    "request": "^2.88.0"
   }
 }
