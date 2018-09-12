@@ -7,15 +7,90 @@ a {
   color: #00B7FF;
 }
 
+a {
+  color: #00B7FF;
+}
+.arial-font{
+  font-family: 'Questrial', sans-serif;
+}
 .header{
   font-family: 'Playfair Display SC', serif;
 }
-
+.top {
+  width: 100%;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 15px;
+}
+#text{
+  width: 500px;
+}
+.border-small{
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+.border-big{
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 40px;
+  text-align: center;
+}
+.border-small:hover{
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+.border-big:hover{
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+.border-spec p {
+  font-size: 15px;
+  font-family: 'Questrial', sans-serif;
+}
 .text-center{
   text-align: center;
 }
-
-h1{
+.padding-div-top-100{
+  padding-top: 100px;
+}
+.padding-div-top-25{
+  padding-top: 25px;
+}
+.padding-div-bottom-100{
+  padding-bottom: 100px;
+}
+.padding-div-bottom{
+  padding-bottom: 50px;
+}
+.padding-div-bottom-25{
+  padding-bottom: 25px;
+}
+.blue{
+  color: #00B7FF;
+}
+.gold{
+  color: #fbc531;
+}
+.blue:hover{
+  color: #00B7FF;
+  font-size: 50px;
+}
+.gold:hover{
+  color: #fbc531;
+  font-size: 50px;
+}
+#logo{
+  width: 500px;
   -webkit-animation: color-change 20s forwards;
   -moz-animation: color-change 20s forwards;
   -o-animation: color-change 20s forwards;
