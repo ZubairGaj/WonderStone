@@ -28,6 +28,17 @@ function formSubmit(){
   }
 }
 
+function hoverState(idState){
+  console.log(idState);
+  document.getElementById(idState).style.color = "white";
+  document.getElementById(idState).style.backgroundColor = "black";
+}
+
+function mouseUp(idState){
+  document.getElementById(idState).style.color = "black";
+  document.getElementById(idState).style.backgroundColor = "white";
+}
+
 function Navigation(changeto){
   console.log('current',this.currentlyActive);
   document.getElementById(this.currentlyActive).style.display = "none";
