@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 var indexRouter = require('./routes/index');
 var cors = require('cors')
 var request = require('request');
+const hbs = require('hbs');
 
 const app = express();
 
@@ -27,6 +28,8 @@ app.use(function(req, res, next) {
    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
    next();
 });
+
+hbs.registerPartials(__dirname + '/views/partials');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('public', path.join(__dirname, 'public'));

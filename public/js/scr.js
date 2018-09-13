@@ -1,3 +1,5 @@
+var currentlyActive = "OURPHIL"
+
 function formSubmit(){
   $( "#submit-message" ).empty();
   var textareaField = document.getElementById('inputTextarea');
@@ -24,4 +26,13 @@ function formSubmit(){
     posting.done()
     $( "#submit-message" ).empty().append('Query successfully recieved!')
   }
+}
+
+function Navigation(changeto){
+  console.log('current',this.currentlyActive);
+  document.getElementById(this.currentlyActive).style.display = "none";
+  this.currentlyActive = changeto;
+  console.log(changeto);
+  document.getElementById(changeto).style.display = "block";
+  console.log(currentlyActive);
 }

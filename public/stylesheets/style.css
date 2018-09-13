@@ -37,15 +37,20 @@ a {
   padding: 40px;
   text-align: center;
 }
-.border-small:hover{
+.border-about{
+  border: solid 1px black;
+  border-style: dotted;
+  height: 170px;
+  padding: 10px;
+}
+.border-small:active{
   border: solid 1px black;
   border-radius: 5px;
-  padding: 20px;
   text-align: center;
   color: white;
   background-color: black;
 }
-.border-big:hover{
+.border-big:active{
   border: solid 1px black;
   border-radius: 5px;
   padding: 40px;
@@ -56,6 +61,10 @@ a {
 .border-spec p {
   font-size: 15px;
   font-family: 'Questrial', sans-serif;
+}
+.topnav p{
+  display: inline-block;
+  padding: 40px 10px;
 }
 .text-center{
   text-align: center;
