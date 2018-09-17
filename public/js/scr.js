@@ -28,24 +28,20 @@ function formSubmit(){
   }
 }
 
-var onstate = 0;
-
 $(document).ready(function(){
-    $('.items-prd').on('click touchstart', function() {
-      console.log('touchstart');
-      console.log('check', onstate);
-      if (onstate === 0){
-        console.log('check',onstate);
-        document.getElementById(this.id).style.color = "white";
-        document.getElementById(this.id).style.backgroundColor = "black";
-        onstate = 1;
-      } else if (onstate === 1){
-        console.log(onstate);
-        document.getElementById(this.id).style.color = "black";
-        document.getElementById(this.id).style.backgroundColor = "white";
-        onstate = 0;
-      }
-    });
+  $('.items-prd').on('click touchstart', function() {
+    console.log(document.getElementById(this.id).style.backgroundColor);
+    if (document.getElementById(this.id).style.backgroundColor === "white"){
+      document.getElementById(this.id).style.color = "white";
+      document.getElementById(this.id).style.backgroundColor = "black";
+    } else if (document.getElementById(this.id).style.backgroundColor === "black"){
+      document.getElementById(this.id).style.color = "black";
+      document.getElementById(this.id).style.backgroundColor = "white";
+    } else {
+      document.getElementById(this.id).style.color = "white";
+      document.getElementById(this.id).style.backgroundColor = "black";
+    }
+  });
 });
 
 function Navigation(changeto){
