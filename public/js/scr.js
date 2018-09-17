@@ -28,16 +28,25 @@ function formSubmit(){
   }
 }
 
-function hoverState(idState){
-  console.log(idState);
-  document.getElementById(idState).style.color = "white";
-  document.getElementById(idState).style.backgroundColor = "black";
-}
+var onstate = 0;
 
-function mouseUp(idState){
-  document.getElementById(idState).style.color = "black";
-  document.getElementById(idState).style.backgroundColor = "white";
-}
+$(document).ready(function(){
+    $('.items-prd').on('click touchstart', function() {
+      console.log('touchstart');
+      console.log('check', onstate);
+      if (onstate === 0){
+        console.log('check',onstate);
+        document.getElementById(this.id).style.color = "white";
+        document.getElementById(this.id).style.backgroundColor = "black";
+        onstate = 1;
+      } else if (onstate === 1){
+        console.log(onstate);
+        document.getElementById(this.id).style.color = "black";
+        document.getElementById(this.id).style.backgroundColor = "white";
+        onstate = 0;
+      }
+    });
+});
 
 function Navigation(changeto){
   console.log('current',this.currentlyActive);
