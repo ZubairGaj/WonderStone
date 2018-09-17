@@ -29,7 +29,7 @@ function formSubmit(){
 }
 
 $(document).ready(function(){
-  $('.items-prd').on('click touchstart', function() {
+  $('.items-prd').on('touchstart', function() {
     console.log(document.getElementById(this.id).style.backgroundColor);
     if (document.getElementById(this.id).style.backgroundColor === "white"){
       document.getElementById(this.id).style.color = "white";
