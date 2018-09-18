@@ -6,6 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+.active{
+  color: #fbc531;
+}
+.jumbotron{
+  background-color: white !important;
+}
 .content-map{
   margin: auto;
   text-align: center;

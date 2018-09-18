@@ -1,5 +1,5 @@
-<div class="container-fluid text-center">
-  <div class="top" id="OURPHIL">
+<div class="container-fluid">
+  <div class="top first-content" style="display:none;" id="OURPHIL">
     <div class="col-md-2"><br /></div>
     <div class="col-md-8">
       <div id="info" class="container-fluid slide-spec">
@@ -18,7 +18,7 @@
   </div>
   <div class="" style="display:none;" id="OURSER">
       <div id="info" class="container-fluid text-center">
-          <h2 class="arial-font">Our Services</h2>
+          <h2 class="arial-font">Pick a Service</h2>
           <div class="col-md-4 col-sm-4 col-xs-4">
               <div class="border-spec items-prd border-small" id="Static">
                 <span class="glyphicon glyphicon-star blue"></span>
@@ -93,24 +93,28 @@
       </div>
   </div>
   <div class="" style="display:none;" id="CONTACT">
-    <div class="jumbotron">
-      <p action="info">Contact Us</p>
-      <hr />
-      <div class="form-group">
-        <label for="inputFullName">Full Name</label>
-        <input type="text" class="form-control" id="inputFullName" placeholder="Enter your full name" required>
+    <div class="col-md-2 col-sm-2 col-xs-2"></div>
+    <div class="col-md-8 col-sm-8 col-xs-8">
+      <div class="jumbotron">
+        <p action="info">Contact Us</p>
+        <hr />
+        <div class="form-group">
+          <label for="inputFullName">Full Name</label>
+          <input type="text" class="form-control" id="inputFullName" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail">Email address</label>
+          <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Customer Query</label>
+          <textarea class="form-control" id="inputTextarea" placeholder="Enter your query" required></textarea>
+        </div>
+        <small id="submit-message"></small> <br /> <br />
+        <input type="submit" onclick="formSubmit()" class="btn btn-primary" />
       </div>
-      <div class="form-group">
-        <label for="inputEmail">Email address</label>
-        <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Customer Query</label>
-        <textarea class="form-control" id="inputTextarea" placeholder="Enter your query" required></textarea>
-      </div>
-      <small id="submit-message"></small> <br /> <br />
-      <input type="submit" onclick="formSubmit()" class="btn btn-primary" />
     </div>
+    <div class="col-md-2 col-sm-2 col-xs-2"></div>
   </div>
 </div>

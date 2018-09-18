@@ -29,26 +29,38 @@ function formSubmit(){
 }
 
 $(document).ready(function(){
+   var cart = {
+     "Static":false,
+     "Bespoke":false,
+     "Integrated":false
+   }
   $('.items-prd').on('click', function() {
-    console.log(document.getElementById(this.id).style.backgroundColor);
     if (document.getElementById(this.id).style.backgroundColor === "white"){
       document.getElementById(this.id).style.color = "white";
       document.getElementById(this.id).style.backgroundColor = "black";
+      cart[this.id] = true;
+      console.log(cart);
     } else if (document.getElementById(this.id).style.backgroundColor === "black"){
       document.getElementById(this.id).style.color = "black";
       document.getElementById(this.id).style.backgroundColor = "white";
+      cart[this.id] = false;
+      console.log(cart);
     } else {
       document.getElementById(this.id).style.color = "white";
       document.getElementById(this.id).style.backgroundColor = "black";
+      console.log(cart[this.id]);
+      cart[this.id] = true;
+      console.log(cart);
     }
   });
+  $(".first").addClass("active");
+  $('.first-content').css('display', 'block');
 });
 
-function Navigation(changeto){
-  console.log('current',this.currentlyActive);
+function Navigation(changeto, checker){
+  $(".active").removeClass("active");
+  $("#"+checker.id).addClass("active");
   document.getElementById(this.currentlyActive).style.display = "none";
   this.currentlyActive = changeto;
-  console.log(changeto);
   document.getElementById(changeto).style.display = "block";
-  console.log(currentlyActive);
 }
