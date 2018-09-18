@@ -89,6 +89,9 @@ a {
   -ms-animation: color-change 20s forwards;
   animation: color-change 20s forwards;
 }
+#header-top{
+  width: 100% !important
+}
 @-webkit-keyframes color-change {
   0% { color: black; }
   90% { color: #fbc531; }
