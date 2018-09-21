@@ -18,28 +18,32 @@
   </div>
   <div class="" style="display:none;" id="OURSER">
       <div id="info" class="container-fluid text-center">
-          <h2 class="arial-font">Pick a Service</h2>
+        <div class="row br">
+          <h2 class="arial-font">Our Services</h2>
           <div class="col-md-4 col-sm-4 col-xs-4">
               <div class="border-spec items-prd border-small" id="Static">
                 <span class="glyphicon glyphicon-star blue"></span>
                 <h4>Static website</h4>
-                <p>Our specialist team and design squad, will build your website from the ground up, with specifications suited to your brand.</p>
+                <p>A static website is ideal for a small business, it allows customers to get basic information about your business such as opening times, contact details, addresses and more.</p>
               </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-4">
-              <div class="border-spec items-prd border-big" id="Bespoke">
-                <span class="glyphicon glyphicon-star"></span>
-                <h4>Bespoke system</h4>
-                <p>Our innovation team will help give your brand the push that it needs to success in an ever changing marketplace. </p>
+              <div class="border-spec items-prd border-small" id="Bespoke">
+                <span class="glyphicon glyphicon-star black"></span>
+                <h4>Complete Rebranding</h4>
+                <p>Our team will rebrand your business with new logos, consistent colorways and many more. We at Wonderstone will ensure the best design specifications for your business needs.</p>
               </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-4">
             <div class="border-spec items-prd border-small" id="Integrated">
               <span class="glyphicon glyphicon-star gold"></span>
-              <h4>Integrated website</h4>
-              <p>At Wonderstone we use the agile development methodology, which means we constantly plan, test, design and develop in daily iterations. </p>
+              <h4>Bespoke Services</h4>
+              <p>Our team at wonderstone will help you build whatever software you have in mind. This could range from a bespoke inventory management system or a simple update to an existing tool.</p>
             </div>
           </div>
+        </div>
+        <div class="row">
+        </div>
       </div>
   </div>
   <div class="" style="display:none;" id="ABOUT">
@@ -103,9 +107,27 @@
           <input type="text" class="form-control" id="inputFullName" placeholder="Enter your full name" required>
         </div>
         <div class="form-group">
+          <label for="inputFullName">Company Name</label>
+          <input type="text" class="form-control" id="inputCompanyName" placeholder="Enter your companies name" required>
+        </div>
+        <div class="form-group">
+          <label for="inputNumber">Contact Number</label>
+          <input type="number" class="form-control" id="inputCompanyNumber" placeholder="Enter your prefered contact number" required>
+        </div>
+        <div class="form-group">
           <label for="inputEmail">Email address</label>
-          <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+          <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your prefered contact email" required>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="inputservices">What service are you most interested in?</label>
+          <br>
+          <select name="inputservices" id="servicesfield"class="form-control" required>
+            <option value="staticWebsite">Static website</option>
+            <option value="Rebranding">Complete Rebranding</option>
+            <option value="Bespoke">Bespoke Services</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="exampleInputEmail1">Customer Query</label>

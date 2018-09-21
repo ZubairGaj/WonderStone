@@ -14,6 +14,10 @@ router.get('/ebay', function(req, res, next) {
   res.render('login', { title: 'WonderStone Group' });
 });
 
+router.get('/db', function(req, res, next) {
+  res.render('db');
+});
+
 router.get('/all', (req, res, next)=>{
   schema.find({}, function (err, docs) {
     res.json(docs)
