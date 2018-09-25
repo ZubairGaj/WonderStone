@@ -4,7 +4,6 @@ function formSubmit(){
   $( "#submit-message" ).empty();
   var textareaField = document.getElementById('inputTextarea');
   var emailField = document.getElementById('email');
-  var servicesFields = document.getElementById('servicesfield');
   var nameField = document.getElementById('inputFullName');
   var companyNameField = document.getElementById('inputCompanyName');
   var companyNumberField = document.getElementById('inputCompanyNumber');
@@ -14,8 +13,7 @@ function formSubmit(){
     companyname: companyNameField.value,
     query: textareaField.value,
     contactnumber: companyNumberField.value,
-    email: emailField.value,
-    services: servicesFields.value
+    email: emailField.value
   }
 
 
@@ -59,30 +57,6 @@ function formSubmit(){
 }
 
 $(document).ready(function(){
-   var cart = {
-     "Static":false,
-     "Bespoke":false,
-     "Integrated":false
-   }
-  $('.items-prd').on('click', function() {
-    if (document.getElementById(this.id).style.backgroundColor === "white"){
-      document.getElementById(this.id).style.color = "white";
-      document.getElementById(this.id).style.backgroundColor = "black";
-      cart[this.id] = true;
-      console.log(cart);
-    } else if (document.getElementById(this.id).style.backgroundColor === "black"){
-      document.getElementById(this.id).style.color = "black";
-      document.getElementById(this.id).style.backgroundColor = "white";
-      cart[this.id] = false;
-      console.log(cart);
-    } else {
-      document.getElementById(this.id).style.color = "white";
-      document.getElementById(this.id).style.backgroundColor = "black";
-      console.log(cart[this.id]);
-      cart[this.id] = true;
-      console.log(cart);
-    }
-  });
   $(".first").addClass("active");
   $('.first-content').css('display', 'block');
 });
@@ -110,8 +84,7 @@ function dbRead(){
                     $('<th>').text("Companyname").addClass("table-row"),
                     $('<th>').text("Query").addClass("table-row"),
                     $('<th>').text("Contactnumber").addClass("table-row"),
-                    $('<th>').text("Email").addClass("table-row"),
-                    $('<th>').text("Service Selected").addClass("table-row")
+                    $('<th>').text("Email").addClass("table-row")
                 ).appendTo('#lardle');
             console.log(item);
             var $tr = $('<tr>').addClass("table").append(
@@ -119,8 +92,7 @@ function dbRead(){
                 $('<td>').text(item.companyname).addClass("table-row"),
                 $('<td>').text(item.query).addClass("table-row"),
                 $('<td>').text(item.contactnumber).addClass("table-row"),
-                $('<td>').text(item.email).addClass("table-row"),
-                $('<td>').text(item.services).addClass("table-row")
+                $('<td>').text(item.email).addClass("table-row")
             ).appendTo('#lardle');
           });
       });
