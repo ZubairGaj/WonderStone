@@ -1,0 +1,38 @@
+@media only screen and (max-width: 2000px) and (min-width: 700px)  {
+  .content{
+    width: 700px;
+    margin: auto;
+  }
+  .App-logo {
+    width: 300px;
+    padding-top: 25px;
+  }
+  .font-small {
+    font-size: 30px;
+  }
+  .title {
+    background-color: aqua;
+  }
+  .bitle {
+    border-left: 4px solid black;
+    padding-left: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 700px) and (min-width: 400px)  {
+  .content{
+    width: 100%;
+  }
+  .App-logo {
+    width: 200px;
+    padding-top: 25px;
+  }
+  .font-small {
+    font-size: 30px;
+  }
+  .title {
+    border-left: 2px solid black;
+    padding-left: 20px;
+  }
+}
