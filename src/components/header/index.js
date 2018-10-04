@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logow.png';
 import '../../style/App.css';
+import ContactForm from './modules/form';
 
 class Header extends Component {
   render() {

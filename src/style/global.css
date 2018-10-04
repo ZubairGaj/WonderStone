@@ -1,14 +1,22 @@
 @media only screen and (max-width: 2000px) and (min-width: 700px)  {
+  body{
+    background-color: #fff;
+  }
   .content{
     width: 700px;
     margin: auto;
   }
   .App-logo {
-    width: 300px;
-    padding-top: 25px;
+    width: 90px;
   }
   .font-small {
     font-size: 30px;
+  }
+  .goose{
+    font-family: cocogoose;
+  }
+  .gooselight{
+    font-family: cocogooselight;
   }
   .title {
     background-color: aqua;
@@ -17,7 +25,44 @@
     border-left: 4px solid black;
     padding-left: 20px;
   }
-
+  .text-align-left{
+    text-align: left;
+  }
+  .banner{
+    text-align: center
+  }
+  .banner img{
+    width: 100%;
+    border: 2px solid black;
+    padding: 0px;
+  }
+  .col-sb-12{
+    display: inline-block;
+    width: 100%
+  }
+  .col-sb-10{
+    display: inline-block;
+    width: 83%
+  }
+  .col-sb-8{
+    display: inline-block;
+    width: 66.4%
+  }
+  .col-sb-4{
+    display: inline-block;
+    width: 33.2%
+  }
+  .col-sb-2{
+    display: inline-block;
+    width: 16.6%
+  }
+  .col-sb-1{
+    display: inline-block;
+    width: 12%
+  }
+  .row{
+    display: inline-block;
+  }
 }
 
 @media only screen and (max-width: 700px) and (min-width: 400px)  {
@@ -25,11 +70,15 @@
     width: 100%;
   }
   .App-logo {
-    width: 200px;
-    padding-top: 25px;
+    width: 50px;
   }
   .font-small {
     font-size: 30px;
+  }
+  .banner img{
+    width: 100%;
+    border: 2px solid black;
+    padding: 0px;
   }
   .title {
     border-left: 2px solid black;

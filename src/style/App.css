@@ -1,7 +1,20 @@
+@font-face {
+  font-family: 'cocogoose';
+  font-weight: 900;
+  src: url('./cocoultralight.ttf'); /* IE9 Compat Modes */
+  src: local('cocoultralight'), local('OpenSans'),
+       url('./cocoultralight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'cocogooselight';
+  font-weight: 900;
+  src: url('./cocolight.ttf'); /* IE9 Compat Modes */
+  src: local('cocolight'), local('OpenSans'),
+       url('./cocolight.ttf') format('truetype');
+}
 .App-header {
-  background-color: #222;
-  height: 100px;
-  padding: 20px;
+  background-color: #ffd800;
+  padding: 25px 0;
   color: white;
   text-align: center;
 }

@@ -8,7 +8,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Content />
+        <div className="container checker">
+          <div className="col-md-8">
+            <Content />
+          </div>
+        </div>
       </div>
     );
   }
