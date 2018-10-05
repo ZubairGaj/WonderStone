@@ -1,24 +1,17 @@
 {
   "name": "wonderstone",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cookie-parser": "~1.4.3",
-    "cors": "^2.8.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.0",
-    "general-oauth2": "^1.4.3",
-    "hbs": "~4.0.1",
-    "http-errors": "~1.6.2",
-    "mongoose": "^5.2.9",
-    "morgan": "~1.9.0",
-    "nodemailer": "^4.6.8",
-    "passport": "^0.4.0",
-    "passport-ebay": "^1.0.1-beta",
-    "request": "^2.88.0"
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-jsonschema-form": "^1.0.5",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
