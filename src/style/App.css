@@ -26,3 +26,24 @@
 .App-intro {
   font-size: large;
 }
+
+::-webkit-input-placeholder {
+  color: peachpuff;
+  font-family: cocogoose;
+  font-size: 13px;
+}
+::-moz-placeholder {
+  color: peachpuff;
+  font-family: cocogoose;
+  font-size: 13px;
+}
+:-ms-input-placeholder {
+  color: peachpuff;
+  font-family: cocogoose;
+  font-size: 13px;
+}
+::placeholder {
+  color: peachpuff;
+  font-family: cocogoose;
+  font-size: 13px;
+}
