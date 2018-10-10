@@ -27,10 +27,20 @@
   .banner{
     text-align: center
   }
+  .footer{
+    width: 100%;
+    background-color: #ffd800;
+    border-top: 100px solid white;
+    padding: 10px 0;
+    display: inline-block
+  }
   .App-banner {
     width: 100%;
     border: 2px solid black;
     padding: 0px;
+  }
+  .default-font{
+    font-family: Arial, Helvetica, sans-serif
   }
   .col-sb-12{
     display: inline-block;

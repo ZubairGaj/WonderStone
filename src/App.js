@@ -4,6 +4,7 @@ import './style/bootstrap.min410.css';
 import './style/global.css';
 import Header from "./components/header/index"
 import Content from "./components/content/index"
+import Footer from "./components/footer"
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
           </div>
           <div className="col-md-2"></div>
         </div>
+        <Footer />
       </div>
     );
   }

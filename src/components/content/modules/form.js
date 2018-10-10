@@ -4,12 +4,12 @@ class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      email: "",
-      number: "",
-      companyname: "",
-      companyinfo: "",
-      projectinfo: ""
+      name: "lol",
+      email: "lol@lol.com",
+      number: "7897987",
+      companyname: "huih",
+      companyinfo: "joij",
+      projectinfo: "oijoij"
     };
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
@@ -29,13 +29,15 @@ class Form extends Component {
       companyinfo: this.state.companyinfo,
       projectinfo: this.state.projectinfo
     }
-    fetch('https://mywebsite.com/endpoint/', {
+    console.log(object);
+    
+    fetch('http://localhost:3002/query', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
       },
-      body: object
+      body: JSON.stringify(object)
     })
   }
 
@@ -62,7 +64,7 @@ class Form extends Component {
   }
   render() {
     return (
-        <form>
+        <div>
           <br></br>
           <hr></hr>
           <div className="row">
@@ -112,11 +114,11 @@ class Form extends Component {
           <div className="row">
             <div className="col-md-12">
               <div className="form-group">
-                <input type="submit" onClick={()=>{this.send()}} className="btn btn-primary" />
+                <button onClick={()=>{this.send()}} className="btn btn-primary">Submit</button>
               </div>
             </div>
           </div>
-        </form>
+        </div>
     );
   } 
 }
