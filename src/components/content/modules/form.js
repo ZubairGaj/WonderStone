@@ -74,6 +74,8 @@ class Form extends Component {
           <hr></hr>
           <iframe name="hiddenFrame" width="0" height="0" border="0"></iframe>
           <form method="get" target="hiddenFrame">
+            <h5 className="gooselight">Inquiry Form</h5>
+            <br></br>
             <div className="row">
               <div className="col-md-6">
                 <div className="form-group">
@@ -132,7 +134,7 @@ class Form extends Component {
               <div className="col-md-4"></div>
               <div className="col-md-4">
                 <div className="form-group banner">
-                  <p className="goose text-primary">{this.state.formPong}</p>
+                  <small className="goose text-primary">{this.state.formPong}</small>
                 </div>
               </div>
               <div className="col-md-4"></div>

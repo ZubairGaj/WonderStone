@@ -11,7 +11,7 @@ class Content extends Component {
           <div className="col-md-12">
             <br></br>
             <br></br>
-            <h2 class="banner">About us</h2>
+            <h5 class="gooselight banner">About us</h5>
             <br></br>
           </div>
         </div>
@@ -19,7 +19,7 @@ class Content extends Component {
             <div class="col-md-4 col-sm-4 col-xs-4">
               <div class="border-spec border-about">
                 <span class="glyphicon glyphicon-star"></span>
-                <h5 className="gooselight">Bespoke Development</h5>
+                <p className="gooselight">Bespoke Development</p>
                 <br></br>
                 <p className="goose">Our specialist team and design squad, will build your website from the ground up, with specifications suited to your brand.</p>
               </div>
@@ -27,7 +27,7 @@ class Content extends Component {
             <div class="col-md-4 col-sm-4 col-xs-4">
               <div class="border-spec border-about">
                 <span class="glyphicon glyphicon-heart"></span>
-                <h5 className="gooselight">Specialist Team</h5>
+                <p className="gooselight">Specialist Team</p>
                 <br></br>
                 <p className="goose">Our innovation team will help give your brand the push that it needs to success in an ever changing marketplace. </p>
               </div>
@@ -35,7 +35,7 @@ class Content extends Component {
             <div class="col-md-4 col-sm-4 col-xs-4">
               <div class="border-spec border-about">
                 <span class="glyphicon glyphicon-heart"></span>
-                <h5 className="gooselight">Agile Development</h5>
+                <p className="gooselight">Agile Development</p>
                 <br></br>
                 <p className="goose">At Wonderstone we use the agile development methodology, which means we constantly plan, test, design and develop in daily iterations. </p>
               </div>
@@ -46,7 +46,7 @@ class Content extends Component {
             <div class="col-md-4 col-sm-4 col-xs-4">
               <div class="border-spec border-about">
                 <span class="	glyphicon glyphicon-home"></span>
-                <h5 className="gooselight">London Based</h5>
+                <p className="gooselight">London Based</p>
                 <br></br>
                 <p className="goose">To maximize efficency we base our team in London, which allows us to streamline product deployment, communication and development.</p>
               </div>
@@ -54,7 +54,7 @@ class Content extends Component {
             <div class="col-md-4 col-sm-4 col-xs-4">
               <div class="border-spec border-about">
                 <span class="glyphicon glyphicon-ok-circle"></span>
-                <h5 className="gooselight">Design professionals</h5>
+                <p className="gooselight">Design professionals</p>
                 <br></br>
                 <p className="goose">Our innovation team will help give your brand the push that it needs to success in an ever changing marketplace.</p>
               </div>
@@ -62,7 +62,7 @@ class Content extends Component {
             <div class="col-md-4 col-sm-4 col-xs-4">
               <div class="border-spec border-about">
                 <span class="glyphicon glyphicon-heart"></span>
-                <h5 className="gooselight">Free Quote</h5>
+                <p className="gooselight">Free Quote</p>
                 <br></br>
                 <p className="goose">For free tailored price quotes from top web designers in the UK, complete the form below.</p>
               </div>
