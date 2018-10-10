@@ -32,7 +32,7 @@ class Form extends Component {
     }
     console.log(object);
     if (this.state.name.length > 0 && this.state.email.length > 0 && this.state.number.length > 0 && this.state.companyname.length > 0 && this.state.companyinfo.length > 0 && this.state.projectinfo.length > 0) {
-      fetch('http://localhost:3002/query', {
+      fetch('https://wonderstone-serve.herokuapp.com/query', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
