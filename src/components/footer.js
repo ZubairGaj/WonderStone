@@ -16,12 +16,11 @@ class Footer extends Component {
     return (
       <div className="footer">
         <div className="banner">
-          <p className="gooselight">WONDERSTONE</p>
-          <p className="default-font"><span>&#169;</span> {this.state.date}</p>
+          <p ><span className="goose">WONDERSTONE GROUP LIMITED</span> <span>&#169;</span> {this.state.date}</p>
         </div>
       </div>
     );
-  } 
+  }
 }
 
 export default Footer;

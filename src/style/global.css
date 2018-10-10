@@ -8,6 +8,11 @@
   .font-small {
     font-size: 30px;
   }
+  .form-group button{
+    text-align: center;
+    margin:auto;
+    width: 100%;
+  }
   .goose{
     font-family: cocogoose;
   }

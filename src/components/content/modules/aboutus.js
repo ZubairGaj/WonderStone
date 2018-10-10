@@ -6,12 +6,6 @@ class Content extends Component {
   render() {
     return (
       <div className="content-mini">
-        <br></br>
-        <div className="row">
-          <div className="col-md-12">
-            <img src={logo} className="App-banner" alt="banner" />
-          </div>
-        </div>
         <div className="row text-align-left">
           <div className="col-md-12">
             <br></br>

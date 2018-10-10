@@ -9,7 +9,8 @@ class Form extends Component {
       number: "7897987",
       companyname: "huih",
       companyinfo: "joij",
-      projectinfo: "oijoij"
+      projectinfo: "oijoij",
+      formPong: "Your data is safe with us, we will never share your details with 3rd party services."
     };
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
@@ -18,7 +19,7 @@ class Form extends Component {
     this.handleCompanyInfoChange = this.handleCompanyInfoChange.bind(this);
     this.handleProjectInfoChange = this.handleProjectInfoChange.bind(this);
   }
-  
+
   send(){
     console.log('lol');
     const object = {
@@ -30,7 +31,7 @@ class Form extends Component {
       projectinfo: this.state.projectinfo
     }
     console.log(object);
-    
+
     fetch('http://localhost:3002/query', {
       method: 'POST',
       headers: {
@@ -39,6 +40,7 @@ class Form extends Component {
       },
       body: JSON.stringify(object)
     })
+    this.setState({formPong: "Your query has been submitted!"});
   }
 
   handleNameChange (e) {
@@ -112,15 +114,27 @@ class Form extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-4"></div>
+            <div className="col-md-4">
               <div className="form-group">
-                <button onClick={()=>{this.send()}} className="btn btn-primary">Submit</button>
+                <button onClick={()=>{this.send()}} className="btn btn-primary button-style">Submit</button>
+                <br></br>
               </div>
             </div>
+            <div className="col-md-4"></div>
+          </div>
+          <div className="row">
+            <div className="col-md-4"></div>
+            <div className="col-md-4">
+              <div className="form-group banner">
+                <p className="goose text-primary">{this.state.formPong}</p>
+              </div>
+            </div>
+            <div className="col-md-4"></div>
           </div>
         </div>
     );
-  } 
+  }
 }
 
 export default Form;
