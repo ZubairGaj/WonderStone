@@ -1,6 +1,65 @@
 import React, { Component } from 'react';
 
 class Form extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      email: "",
+      number: "",
+      companyname: "",
+      companyinfo: "",
+      projectinfo: ""
+    };
+    this.handleNameChange = this.handleNameChange.bind(this);
+    this.handleEmailChange = this.handleEmailChange.bind(this);
+    this.handleNumberChange = this.handleNumberChange.bind(this);
+    this.handleCompanyNameChange = this.handleCompanyNameChange.bind(this);
+    this.handleCompanyInfoChange = this.handleCompanyInfoChange.bind(this);
+    this.handleProjectInfoChange = this.handleProjectInfoChange.bind(this);
+  }
+  
+  send(){
+    console.log('lol');
+    const object = {
+      name: this.state.name,
+      email: this.state.email,
+      number: this.state.number,
+      companyname: this.state.companyname,
+      companyinfo: this.state.companyinfo,
+      projectinfo: this.state.projectinfo
+    }
+    fetch('https://mywebsite.com/endpoint/', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: object
+    })
+  }
+
+  handleNameChange (e) {
+    this.setState({name: e.target.value});
+  };
+  handleEmailChange(e) {
+    this.setState({email: e.target.value});
+  };
+  handleNumberChange(e) {
+    this.setState({number: e.target.value});
+  };
+  handleCompanyNameChange(e) {
+    this.setState({companyname: e.target.value});
+  };
+  handleCompanyInfoChange(e) {
+    this.setState({companyinfo: e.target.value});
+  };
+  handleProjectInfoChange(e) {
+    this.setState({projectinfo: e.target.value});
+  };
+
+  componentDidMount() {
+  }
   render() {
     return (
         <form>
@@ -8,45 +67,52 @@ class Form extends Component {
           <hr></hr>
           <div className="row">
             <div className="col-md-6">
-              <div class="form-group">
-                <label class="gooselight" for="inputname">Name: </label>
-                <input type="text" class="form-control" id="inputname" placeholder="Please enter your name" required></input>
+              <div className="form-group">
+                <label className="gooselight">Name: </label>
+                <input type="text" className="form-control" id="inputname" placeholder="Please enter your name" value={this.state.name} onChange={this.handleNameChange} required></input>
               </div>
             </div>
             <div className="col-md-6">
-              <div class="form-group">
-                <label class="gooselight" for="formGroupExampleInput2">Email:</label>
-                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Enter a valid email address" required></input>
+              <div className="form-group">
+                <label className="gooselight">Email:</label>
+                <input type="email" className="form-control" id="formGroupExampleInput2" placeholder="Enter a valid email address" value={this.state.email} onChange={this.handleEmailChange} required></input>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-md-6">
-              <div class="form-group">
-                <label class="gooselight" for="inputname">Number: </label>
-                <input type="number" class="form-control" id="inputname" placeholder="Enter a valid number" required></input>
+              <div className="form-group">
+                <label className="gooselight">Number: </label>
+                <input type="number" className="form-control" id="inputname" placeholder="Enter a valid number" value={this.state.number} onChange={this.handleNumberChange} required></input>
               </div>
             </div>
             <div className="col-md-6">
-              <div class="form-group">
-                <label class="gooselight" for="formGroupExampleInput2">Company Name:</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Please enter your company name" required></input>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-12">
-              <div class="form-group">
-                <label class="gooselight" for="inputname">Company Information: </label>
-                <textarea class="form-control" id="inputname" rows="5" placeholder="Please give us some information regarding your company. (How long you've been around, a link to your current website, where you're located...)" required></textarea>
+              <div className="form-group">
+                <label className="gooselight">Company Name:</label>
+                <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Please enter your company name" value={this.state.companyname} onChange={this.handleCompanyNameChange} required></input>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-md-12">
-              <div class="form-group">
-                <label class="gooselight" for="inputname">Project Information: </label>
-                <textarea class="form-control" id="inputname" rows="5" placeholder="Please give us some information about the project at hand. (How many pages you plan for it to have, What features you'd like incorporated in the site, e.g. contact form, online menu...)" required></textarea>
+              <div className="form-group">
+                <label className="gooselight">Company Information: </label>
+                <textarea className="form-control" id="inputname" rows="5" placeholder="Please give us some information regarding your company. (How long you've been around, a link to your current website, where you're located...)" value={this.state.companyinfo} onChange={this.handleCompanyInfoChange} required></textarea>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <div className="form-group">
+                <label className="gooselight">Project Information: </label>
+                <textarea className="form-control" id="inputname" rows="5" placeholder="Please give us some information about the project at hand. (How many pages you plan for it to have, What features you'd like incorporated in the site, e.g. contact form, online menu...)" value={this.state.projectinfo} onChange={this.handleProjectInfoChange} required></textarea>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <div className="form-group">
+                <input type="submit" onClick={()=>{this.send()}} className="btn btn-primary" />
               </div>
             </div>
           </div>
