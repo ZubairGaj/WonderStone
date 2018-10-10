@@ -16,6 +16,8 @@ class Content extends Component {
           <div className="col-md-12">
             <br></br>
             <hr></hr>
+            <br></br>
+            <br></br>
             <p className="gooselight">What we do!</p>
             <div className="row">
               <div className="col-md-8">
@@ -29,9 +31,11 @@ class Content extends Component {
             </div>
           </div>
         </div>
+        <br></br>
+        <br></br>
       </div>
     );
-  } 
+  }
 }
 
 export default Content;

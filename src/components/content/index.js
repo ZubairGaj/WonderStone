@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../../style/global.css';
 import '../../style/App.css';
 import Philosphy from './modules/philosophy'
+import Aboutus from './modules/aboutus'
 import Form from './modules/form'
 
 class Content extends Component {
@@ -9,10 +10,11 @@ class Content extends Component {
     return (
       <div className="cont">
         <Philosphy />
+        <Aboutus />
         <Form />
       </div>
     );
-  } 
+  }
 }
 
 export default Content;
