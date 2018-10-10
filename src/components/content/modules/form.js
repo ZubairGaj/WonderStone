@@ -4,12 +4,12 @@ class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "lol",
-      email: "lol@lol.com",
-      number: "7897987",
-      companyname: "huih",
-      companyinfo: "joij",
-      projectinfo: "oijoij",
+      name: "",
+      email: "",
+      number: "",
+      companyname: "",
+      companyinfo: "",
+      projectinfo: "",
       formPong: "Your data is safe with us, we will never share your details with 3rd party services."
     };
     this.handleNameChange = this.handleNameChange.bind(this);
@@ -73,13 +73,13 @@ class Form extends Component {
             <div className="col-md-6">
               <div className="form-group">
                 <label className="gooselight">Name: </label>
-                <input type="text" className="form-control" id="inputname" placeholder="Please enter your name" value={this.state.name} onChange={this.handleNameChange} required></input>
+                <input type="text" className="form-control text-primary" id="inputname" placeholder="Please enter your name" value={this.state.name} onChange={this.handleNameChange} required></input>
               </div>
             </div>
             <div className="col-md-6">
               <div className="form-group">
                 <label className="gooselight">Email:</label>
-                <input type="email" className="form-control" id="formGroupExampleInput2" placeholder="Enter a valid email address" value={this.state.email} onChange={this.handleEmailChange} required></input>
+                <input type="email" className="form-control text-primary" id="formGroupExampleInput2" placeholder="Enter a valid email address" value={this.state.email} onChange={this.handleEmailChange} required></input>
               </div>
             </div>
           </div>
@@ -87,13 +87,13 @@ class Form extends Component {
             <div className="col-md-6">
               <div className="form-group">
                 <label className="gooselight">Number: </label>
-                <input type="number" className="form-control" id="inputname" placeholder="Enter a valid number" value={this.state.number} onChange={this.handleNumberChange} required></input>
+                <input type="number" className="form-control text-primary" id="inputname" placeholder="Enter a valid number" value={this.state.number} onChange={this.handleNumberChange} required></input>
               </div>
             </div>
             <div className="col-md-6">
               <div className="form-group">
                 <label className="gooselight">Company Name:</label>
-                <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Please enter your company name" value={this.state.companyname} onChange={this.handleCompanyNameChange} required></input>
+                <input type="text" className="form-control text-primary" id="formGroupExampleInput2" placeholder="Please enter your company name" value={this.state.companyname} onChange={this.handleCompanyNameChange} required></input>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ class Form extends Component {
             <div className="col-md-12">
               <div className="form-group">
                 <label className="gooselight">Company Information: </label>
-                <textarea className="form-control" id="inputname" rows="5" placeholder="Please give us some information regarding your company. (How long you've been around, a link to your current website, where you're located...)" value={this.state.companyinfo} onChange={this.handleCompanyInfoChange} required></textarea>
+                <textarea className="form-control text-primary" id="inputname" rows="5" placeholder="Please give us some information regarding your company. (How long you've been around, a link to your current website, where you're located...)" value={this.state.companyinfo} onChange={this.handleCompanyInfoChange} required></textarea>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ class Form extends Component {
             <div className="col-md-12">
               <div className="form-group">
                 <label className="gooselight">Project Information: </label>
-                <textarea className="form-control" id="inputname" rows="5" placeholder="Please give us some information about the project at hand. (How many pages you plan for it to have, What features you'd like incorporated in the site, e.g. contact form, online menu...)" value={this.state.projectinfo} onChange={this.handleProjectInfoChange} required></textarea>
+                <textarea className="form-control text-primary" id="inputname" rows="5" placeholder="Please give us some information about the project at hand. (How many pages you plan for it to have, What features you'd like incorporated in the site, e.g. contact form, online menu...)" value={this.state.projectinfo} onChange={this.handleProjectInfoChange} required></textarea>
               </div>
             </div>
           </div>
