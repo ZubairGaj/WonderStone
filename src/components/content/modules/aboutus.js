@@ -5,7 +5,7 @@ import image from '../../../assets/main.jpg';
 class Content extends Component {
   render() {
     return (
-      <div className="">
+      <div className="g-row">
         <hr></hr>
         <div className="row">
           <div className="col-md-12">

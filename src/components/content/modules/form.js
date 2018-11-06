@@ -69,7 +69,7 @@ class Form extends Component {
   }
   render() {
     return (
-        <div>
+        <div className="main-Form">
           <br></br>
           <hr></hr>
           <iframe name="hiddenFrame" width="0" height="0" border="0"></iframe>
