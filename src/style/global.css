@@ -83,6 +83,21 @@
   .App-logo {
     width: 50px;
   }
+  .goose{
+    font-family: cocogoose;
+  }
+  .gooselight{
+    font-family: cocogooselight;
+  }
+  .g-row{
+    text-align: center;
+  }
+  .main-Form{
+    padding: 30px;
+  }
+  .App-box {
+    display: none;
+  }
   .font-small {
     font-size: 30px;
   }
@@ -90,6 +105,13 @@
     width: 100%;
     border: 2px solid black;
     padding: 0px;
+  }
+  .App-banner {
+    width: 100%;
+    border: 2px solid black;
+    padding: 0px;
+    margin: auto;
+    text-align: center;
   }
   .title {
     border-left: 2px solid black;
