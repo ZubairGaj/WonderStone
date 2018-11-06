@@ -93,10 +93,13 @@
     text-align: center;
   }
   .main-Form{
-    padding: 30px;
+    padding: 30px ;
   }
   .App-box {
     display: none;
+  }
+  .banner{
+    text-align: center
   }
   .font-small {
     font-size: 30px;
@@ -116,5 +119,12 @@
   .title {
     border-left: 2px solid black;
     padding-left: 20px;
+  }
+  .footer{
+    width: 100%;
+    background-color: #ffd800;
+    border-top: 100px solid white;
+    padding: 10px 0;
+    display: inline-block
   }
 }

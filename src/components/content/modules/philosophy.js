@@ -8,7 +8,7 @@ class Content extends Component {
       <div className="content-mini">
         <br></br>
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-12 col-sm-12">
             <img src={logo} className="App-banner" alt="banner" />
           </div>
         </div>
