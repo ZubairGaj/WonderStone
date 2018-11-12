@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../../../assets/banner2.jpg';
-import image from '../../../assets/main.jpg';
+import banner from '../../../assets/marketing.png';
+import image from '../../../assets/mini-banner.jpg';
 
 class Content extends Component {
   render() {
@@ -9,7 +9,7 @@ class Content extends Component {
         <br></br>
         <div className="row">
           <div className="col-md-12 col-sm-12">
-            <img src={logo} className="App-banner" alt="banner" />
+            <img src={banner} className="App-banner" alt="banner" />
           </div>
         </div>
         <div className="row text-align-left">
