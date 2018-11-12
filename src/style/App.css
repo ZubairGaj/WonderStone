@@ -13,7 +13,7 @@
        url('./cocolight.ttf') format('truetype');
 }
 .App-header {
-  background-color: #ffd800;
+  background-color: black;
   padding: 25px 0;
   color: white;
   text-align: center;
