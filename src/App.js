@@ -17,7 +17,9 @@ class App extends Component {
           <div className="row">
             <div className="col-md-2 col-sm-2"><br></br></div>
             <div className="col-md-8 col-sm-8">
-              <Content />
+              <Route path="/" exact component={Content} />
+              <Route path="/about/" component={Content} />
+              <Route path="/users/" component={Content} />
             </div>
             <div className="col-md-2 col-sm-2"></div>
           </div>

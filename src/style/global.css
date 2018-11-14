@@ -37,7 +37,19 @@
     background-color: #ffd800;
     border-top: 100px solid white;
     padding: 10px 0;
-    display: inline-block
+    display: inline-block;
+  }
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+      width: 0px;  /* remove scrollbar space */
+      background: transparent;  /* optional: just make scrollbar invisible */
+  }
+  /* optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+      background: #FF0000;
   }
   .App-banner {
     width: 100%;

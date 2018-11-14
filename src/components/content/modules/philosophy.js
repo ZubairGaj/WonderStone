@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../../../assets/banner2.jpg';
-import image from '../../../assets/main.jpg';
+import image from '../../../assets/minibanner.jpg';
 
 class Content extends Component {
   render() {
