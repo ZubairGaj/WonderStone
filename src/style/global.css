@@ -3,7 +3,7 @@
     background-color: #fff;
   }
   .App-logo {
-    width: 300px;
+    width: 90px;
   }
   .font-small {
     font-size: 30px;
@@ -34,11 +34,10 @@
   }
   .footer{
     width: 100%;
-    background-color: black;
+    background-color: #ffd800;
     border-top: 100px solid white;
     padding: 10px 0;
-    display: inline-block;
-    color: white;
+    display: inline-block
   }
   .App-banner {
     width: 100%;
