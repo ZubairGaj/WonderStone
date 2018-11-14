@@ -5,21 +5,25 @@ import './style/global.css';
 import Header from "./components/header/index"
 import Content from "./components/content/index"
 import Footer from "./components/footer"
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <div className="row">
-          <div className="col-md-2"><br></br></div>
-          <div className="col-md-8">
-            <Content />
+      <Router>
+        <div className="App">
+          <Header />
+          <div className="row">
+            <div className="col-md-2 col-sm-2"><br></br></div>
+            <div className="col-md-8 col-sm-8">
+              <Content />
+            </div>
+            <div className="col-md-2 col-sm-2"></div>
           </div>
-          <div className="col-md-2"></div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </Router>
     );
   }
 }
