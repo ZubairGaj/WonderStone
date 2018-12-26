@@ -10,8 +10,8 @@ class Content extends Component {
     return (
       <div className="cont">
         <Philosphy />
-        <Aboutus />
         <Form />
+        <Aboutus />
       </div>
     );
   }
