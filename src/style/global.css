@@ -1,6 +1,6 @@
 @media only screen and (max-width: 2000px) and (min-width: 700px)  {
   body{
-    background-color: #fff;
+    background-color: white;
   }
   .App-logo {
     width: 90px;
@@ -32,10 +32,11 @@
   .banner{
     text-align: center
   }
+  /* ffd800 */
   .footer{
     width: 100%;
-    background-color: #ffd800;
-    border-top: 100px solid white;
+    background-color: white;
+    border-top: 70px solid white;
     padding: 10px 0;
     display: inline-block;
   }
@@ -134,7 +135,7 @@
   }
   .footer{
     width: 100%;
-    background-color: #ffd800;
+    background-color: white;
     border-top: 100px solid white;
     padding: 10px 0;
     display: inline-block

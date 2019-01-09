@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from '../../../assets/banner2.jpg';
-import image from '../../../assets/minibanner.jpg';
+import logo from '../../../assets/marketing.png';
+//import logo from '../../../assets/banner2.jpg';
+import image from '../../../assets/mini-banner.jpg';
 
 class Content extends Component {
   render() {
