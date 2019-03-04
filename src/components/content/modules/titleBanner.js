@@ -8,7 +8,7 @@ class TitleBanner extends Component {
   _generatingBannerTexts(){
     var textArr = ["Develop Simple User-Interfaces",
     "Construct Relevant Database Models",
-    "Stop for coffee!",
+    "Write Code",
     "Generate Web Interfaces Based on Wireframes",
     "Develop Web-Based Solutions to Problems",
     "Build Database Based Product Systems",
