@@ -74,7 +74,7 @@ class Form extends Component {
           <hr></hr>
           <iframe name="hiddenFrame" width="0" height="0" border="0"></iframe>
           <form method="get" target="hiddenFrame">
-            <h5 className="gooselight">Inquiry Form</h5>
+            <h5 className="gooselight Heading">Inquiry Form</h5>
             <br></br>
             <div className="row">
               <div className="col-md-6">
