@@ -1,26 +1,31 @@
 @font-face {
   font-family: 'cocogoose';
   font-weight: 900;
-  src: url('./cocoultralight.ttf'); /* IE9 Compat Modes */
-  src: local('cocoultralight'), local('OpenSans'),
-       url('./cocoultralight.ttf') format('truetype');
+  src: url('./reg.ttf'); /* IE9 Compat Modes */
+  src: local('reg'), local('OpenSans'),
+       url('./reg.ttf') format('truetype');
 }
+/* cocoultralight.ttf */
+/* cocolight.ttf */
 @font-face {
   font-family: 'cocogooselight';
   font-weight: 900;
-  src: url('./cocolight.ttf'); /* IE9 Compat Modes */
-  src: local('cocolight'), local('OpenSans'),
-       url('./cocolight.ttf') format('truetype');
+  src: url('./bold.ttf'); /* IE9 Compat Modes */
+  src: local('bold'), local('OpenSans'),
+       url('./bold.ttf') format('truetype');
 }
 .App-header {
   background-color: white;
   border-bottom: 10px solid black;
-  padding: 25px 0;
+  padding: 10px 0;
   color: white;
   text-align: center;
   position: fixed;
   width: 100%;
   z-index: 9;
+}
+.Heading{
+  font-size: 40px;
 }
 .cont {
   padding-top: 130px;
@@ -56,4 +61,16 @@
   color: peachpuff;
   font-family: cocogoose;
   font-size: 13px;
+}
+
+.fancy{
+  color: #fbc531;
+}
+
+.interesting{
+  color: #192a56;
+}
+
+.headerColourMood{
+  margin: 100px;
 }

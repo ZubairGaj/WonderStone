@@ -11,7 +11,7 @@ class Content extends Component {
           <div className="col-md-12">
             <br></br>
             <br></br>
-            <h5 class="gooselight banner">About us</h5>
+            <h5 class="gooselight banner Heading">About us</h5>
             <br></br>
           </div>
         </div>
