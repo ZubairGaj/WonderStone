@@ -11,7 +11,6 @@ class Content extends Component {
     return (
       <div className="cont">
         <TitleBanner />
-        <Philosphy />
         <Aboutus />
         <Form />
       </div>
