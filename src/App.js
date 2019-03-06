@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import './style/App.css';
 import './style/bootstrap.min410.css';
 import './style/global.css';
-import Header from "./components/header/index"
-import Content from "./components/content/index"
-import Footer from "./components/footer"
+import './style/color.css';
+import './style/navigation.css';
+import NavigationComponent from "./components/navigationComponent/index";
+import Content from "./components/myHomePageComponent/index";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
@@ -13,7 +14,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header />
+          <NavigationComponent />
           <div className="row">
             <div className="col-md-2 col-sm-2"><br></br></div>
             <div className="col-md-8 col-sm-8">
@@ -23,7 +24,6 @@ class App extends Component {
             </div>
             <div className="col-md-2 col-sm-2"></div>
           </div>
-          <Footer />
         </div>
       </Router>
     );

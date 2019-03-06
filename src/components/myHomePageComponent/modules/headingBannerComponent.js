@@ -2,27 +2,37 @@ import React, { Component } from 'react';
 
 class TitleBanner extends Component {
   state = {
-    headerText: "",
+    headerText: "Create",
     headerColourMood: "fancy"
   }
   _generatingBannerTexts(){
     var textArr = ["Develop Simple User-Interfaces",
     "Construct Relevant Database Models",
-    "Write Code",
     "Generate Web Interfaces Based on Wireframes",
+    "Write Code",
     "Develop Web-Based Solutions to Problems",
     "Build Database Based Product Systems",
-    "Develop Simple Company Systems"]
+    "Develop Simple Company Systems",
+    "Connect Businesses with Solutions"
+  ]
 
     var randNumber = Math.floor(Math.random() * textArr.length);
     this.setState({
       headerText: textArr[randNumber]
     })
   }
+
+  intervalTimer(){
+    setInterval(()=>{this._generatingBannerTexts()}, 5000);
+  }
   
   componentDidMount(){
-    this._generatingBannerTexts()
-    setInterval(()=>{this._generatingBannerTexts()}, 5000);
+    this.intervalTimer()
+  }
+
+  componentWillUnmount(){
+    console.log('This component has been unmounted!');
+    clearInterval(this.intervalTimer)
   }
 
   render() {

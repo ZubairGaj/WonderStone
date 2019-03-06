@@ -21,7 +21,6 @@ class Form extends Component {
   }
 
   send(){
-    console.log('lol');
     const object = {
       name: this.state.name,
       email: this.state.email,
@@ -30,7 +29,7 @@ class Form extends Component {
       companyinfo: this.state.companyinfo,
       projectinfo: this.state.projectinfo
     }
-    console.log(object);
+
     if (this.state.name.length > 0 && this.state.email.length > 0 && this.state.number.length > 0 && this.state.companyname.length > 0 && this.state.companyinfo.length > 0 && this.state.projectinfo.length > 0) {
       fetch('https://wonderstone-serve.herokuapp.com/query', {
         method: 'POST',
@@ -139,6 +138,8 @@ class Form extends Component {
               </div>
               <div className="col-md-4"></div>
             </div>
+            <br></br>
+            <br></br>
           </form>
         </div>
     );

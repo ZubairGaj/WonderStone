@@ -111,9 +111,11 @@
   .App-box {
     display: none;
   }
+  
   .banner{
     text-align: center
   }
+
   .font-small {
     font-size: 30px;
   }
