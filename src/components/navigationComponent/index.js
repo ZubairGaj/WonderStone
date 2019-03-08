@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../../assets/logow.png';
 import '../../style/App.css';
-import ContactForm from './modules/form';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   render() {
